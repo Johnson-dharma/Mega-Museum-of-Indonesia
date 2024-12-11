@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Jacques Francois';
+    src: url('JacquesFrancois-Regular.ttf') format('truetype'); /* Ganti dengan path yang sesuai */
+}
+
+body {
+    font-family: 'Jacques Francois', serif; 
+}
+
+.Header {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 2; 
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.PicHeader {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(30%);
+}
+
+.PICLogo {
+    position: absolute;
+    top: 65%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Memindahkan setengah dari lebar dan tinggi elemen */
+    width: 5%; 
+}
+
+.Header h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    z-index: 1;
+    font-weight: 10;
+}
+
+.Header h1 span {
+    display: block; /* Tampilkan setiap span di baris baru */
+}
+
+.Header h2{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 2;
+}
+
+.Main h3{
+    font-weight: 2;
+    margin: 70px;
+    text-align: center;
+}
+
+.overlay {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: white;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+}
+
+.overlay.active {
+    display: flex; /* Tampilkan overlay saat aktif */
+}
+
+.menu-content {
+    text-align: center; /* Memusatkan teks */
+}
+
+.menu-content h2 {
+    margin-bottom: 20px; /* Jarak bawah judul */
+    font-size: 2rem; /* Ukuran font judul */
+}
+
+.menu-content ul {
+    list-style-type: none; /* Hilangkan bullet list */
+    padding: 0; /* Hilangkan padding */
+}
+
+.menu-content ul li {
+    margin: 20px 0; /* Jarak antar item menu */
+}
+
+.menu-content ul li a {
+    color: white; /* Warna tautan */
+    text-decoration: none; /* Hilangkan garis bawah pada tautan */
+    font-size: 1.5rem; /* Ukuran font */
+    transition: color 0.3s; /* Transisi halus untuk warna */
+}
+
+.menu-content ul li a:hover {
+    color: #ffcc00; 
+}
+
+.close {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    font-size: 2rem; 
+    color: white; 
+    cursor: pointer; 
+}
+
+
+
+
+.Partner h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.slider-container {
+    width: 1000px; /* Lebar kontainer untuk menampilkan tiga gambar sekaligus */
+    overflow: hidden; /* Menyembunyikan gambar di luar area tampilan */
+    position: relative;
+    margin: 0 auto;
+} 
+
+.image-slider {
+    display: flex; /* Mengatur gambar dalam baris horizontal */
+    transition: transform 0.5s ease;
+    gap: 20px; /* Jarak antar gambar */
+}
+
+.slide-container {
+    position: relative;
+    width: 300px; /* Lebar setiap gambar */
+    height: 400px; /* Tinggi tetap untuk setiap gambar */
+    flex-shrink: 0;
+    overflow: hidden; /* Menyembunyikan bagian gambar yang berlebihan */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menjaga proporsi gambar dan mengisi seluruh kontainer */
+    display: block;
+    filter: brightness(60%);
+}
+
+.caption {
+    position: absolute;
+    top: 45%; /* Posisikan teks */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Warna teks */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+    width: calc(100% - 20px); /* Supaya teks tidak melebihi lebar gambar */
+}
+
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    background: none; /* Menghilangkan background tombol */
+    border: none; /* Menghilangkan border tombol */
+    padding: 0;
+    cursor: pointer;
+    outline: none; /* Menghilangkan outline saat tombol diklik */
+}
+
+.arrow-icon {
+    width: 50px; /* Ukuran ikon panah */
+    height: auto;
+    transition: transform 0.2s ease; /* Transisi saat di-hover */
+}
+
+button:hover .arrow-icon {
+    transform: scale(1.1); /* Efek memperbesar saat di-hover */
+}
+
+
+
+.EnjoyServices h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-item {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.services-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.caption2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 80%; 
+}
+
+
+footer{
+    background-color: #494848;
+    margin-top: 70px;
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.footerUp {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    color: white; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+.footerDown {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footerDown p {
+    margin: 0; 
+    padding: 5px 0; 
+}

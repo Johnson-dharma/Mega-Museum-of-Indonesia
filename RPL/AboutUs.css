@@ -1,0 +1,14 @@
+.ziyah {
+    width: 200px;
+}
+
+.container {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    margin-top: 20px; /* Jarak dari elemen sebelumnya */
+}
+
+.Bob {
+    width: 200px;
+    margin-left: 20px; /* Jarak antara teks dan gambar */
+}
