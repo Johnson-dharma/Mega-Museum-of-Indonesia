@@ -1,0 +1,174 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 Dec 2024, 20.12.18
+    Author     : raya
+*/
+html {
+  background-image:linear-gradient(#eee, #aaa);
+  height:100%;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Pastikan tinggi body setara dengan tinggi viewport */
+  flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#eee, #aaa);
+    min-height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 100px; 
+    background-color: black; 
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Logo{
+    position: absolute;
+    top: 50%; 
+    left: 3%; 
+    transform: translate(-50%, -50%); /* Memindahkan setengah dari lebar dan tinggi elemen */
+    width: 4%; 
+    border-radius: 50%;
+}
+
+.tombol form {
+    display: inline;
+}
+
+.tombol button {
+    background-color: #FFFCEA; 
+    border: none;
+    color: black; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 14px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    margin: 20px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.tombol button:hover {
+    background-color: #494848; 
+    transform: scale(1.05); 
+    color: whitesmoke;
+}
+
+.tombol button:active {
+    transform: scale(0.95); 
+    background-color: #3e8e41; 
+}
+
+
+button{
+    background-color: #494848;
+    color: whitesmoke;
+}
+
+.back {
+    position: absolute;
+    top: 130px; /* Jarak dari atas */
+    left: 20px; /* Jarak dari kanan */
+}
+
+
+.main {
+    margin-top: 9%;
+    text-align: center;
+}
+
+.main h1 {
+    margin-bottom: 2rem;
+    padding-top: 50px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 2rem; /* Jarak antara gambar dan deskripsi */
+    margin-left: 50px;
+}
+
+.content p {
+    text-align: justify;
+    max-width: 20%; /* Batasi lebar deskripsi */
+    line-height: 1.5; /* Spasi antar baris untuk deskripsi */
+}
+
+.frame {
+    background-color: #ddc;
+    border: solid 5vmin #eee;
+    border-bottom-color: #fff;
+    border-left-color: #eee;
+    border-radius: 2px;
+    border-right-color: #eee;
+    border-top-color: #ddd;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25) inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
+    box-sizing: border-box;
+    display: inline-block;
+    height: 40vh; /* Sesuaikan tinggi */
+    width: 30vw; /* Sesuaikan lebar */
+    padding: 3vmin;
+    text-align: center;
+}
+
+.frame img {
+    max-height: 100%; /* Sesuaikan ukuran gambar */
+    max-width: 100%;
+}
+
+footer{
+    background-color: #494848;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.footerUp {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    color: white; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+.footerDown {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footerDown p {
+    margin: 0; 
+    padding: 5px 0; 
+}

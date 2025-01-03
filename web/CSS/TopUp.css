@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.header{
+    width: 100%;
+    height: 100px; 
+    background-color: black; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+}
+.Logo{
+    position: absolute;
+    top: 50%; 
+    left: 3%; 
+    transform: translate(-50%, -50%); /* Memindahkan setengah dari lebar dan tinggi elemen */
+    width: 4%; 
+    border-radius: 50%;
+}
+.hamburger-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 40%; 
+    left: 6%;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 2; 
+}
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.overlay {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0, 0, 0); 
+    color: white;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+}
+.overlay.active {
+    display: flex; /* Tampilkan overlay saat aktif */
+}
+.menu-content {
+    text-align: center; /* Memusatkan teks */
+}
+.menu-content ul {
+    list-style-type: none; /* Hilangkan bullet list */
+    padding: 0; /* Hilangkan padding */
+}
+.menu-content ul li {
+    margin: 20px 0; /* Jarak antar item menu */
+}
+.menu-content ul li a {
+    color: white; /* Warna tautan */
+    text-decoration: none; /* Hilangkan garis bawah pada tautan */
+    font-size: 1.5rem; /* Ukuran font */
+    transition: color 0.3s; /* Transisi halus untuk warna */
+}
+.menu-content ul li a:hover {
+    color: #ffcc00; 
+}
+.close {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    font-size: 2rem; 
+    color: white; 
+    cursor: pointer; 
+}
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 14%;
+}
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #4a4a4a;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #666;
+}
+.alert {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+.alert.success {
+    background-color: #4caf50;
+}
+.alert.error {
+    background-color: #f44336;
+}
+footer{
+    background-color: #494848;
+    margin-top: 70px;
+    margin-bottom: 5px;
+}
+.logo-footer{
+    width: 100px;
+}
+.footerUp {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    color: white; 
+}
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    margin-bottom: 15px;
+}
+.footerDown {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+.footerDown p {
+    margin: 0; 
+    padding: 5px 0; 
+}

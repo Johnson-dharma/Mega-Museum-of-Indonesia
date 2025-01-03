@@ -1,0 +1,137 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 Dec 2024, 12.13.40
+    Author     : raya
+*/
+
+@font-face {
+    font-family: 'Jacques Francois';
+    src: url('JacquesFrancois-Regular.ttf') format('truetype'); /* Ganti dengan path yang sesuai */
+}
+
+body {
+    font-family: 'Jacques Francois', serif;
+}
+
+.Logo{
+    position: absolute;
+    top: 50%; 
+    left: 3%; 
+    transform: translate(-50%, -50%); /* Memindahkan setengah dari lebar dan tinggi elemen */
+    width: 4%; 
+    border-radius: 50%;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+}
+
+.gambar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Adjust the space between the images as needed */
+    padding-bottom: 50px;
+}
+
+.gambar {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-right: 5%
+}
+
+.gambar img {
+    width: 90%;
+    height: 90%;
+    display: block;
+    filter: brightness(40%);
+    border-radius: 10%;
+}
+
+.gambar a {
+    display: block; 
+    margin-top: 10px;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+h1 {
+    margin-top: 8%;
+    text-align: center;
+    font-size: 80px;
+}
+
+.main {
+    text-align: center;
+    background-color: #D9D9D9;
+    padding-top: 50px;
+    padding-bottom:  50px;
+}
+
+.kotaks {
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+
+footer{
+    background-color: #494848;
+    margin-top: 70px;
+    margin-bottom: 5px;
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.footerUp {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    color: white; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+.footerDown {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footerDown p {
+    margin: 0; 
+    padding: 5px 0; 
+}
+

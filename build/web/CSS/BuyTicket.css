@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Jacques Francois';
+    src: url('JacquesFrancois-Regular.ttf') format('truetype'); /* Ganti dengan path yang sesuai */
+}
+
+body {
+    font-family: 'Jacques Francois', serif; 
+}
+
+.background {
+    width: 100%; 
+    filter: brightness(50%);
+}
+
+.header{
+    width: 100%;
+    height: 100px; 
+    background-color: black; 
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Logo{
+    position: absolute;
+    top: 50%; 
+    left: 3%; 
+    transform: translate(-50%, -50%); /* Memindahkan setengah dari lebar dan tinggi elemen */
+    width: 4%; 
+    border-radius: 50%;
+}
+
+.overlay {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0, 0, 0); 
+    color: white;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 999;
+}
+
+.overlay.active {
+    display: flex; /* Tampilkan overlay saat aktif */
+}
+
+.menu-content {
+    text-align: center; /* Memusatkan teks */
+}
+
+.menu-content ul {
+    list-style-type: none; /* Hilangkan bullet list */
+    padding: 0; /* Hilangkan padding */
+}
+
+.menu-content ul li {
+    margin: 20px 0; /* Jarak antar item menu */
+}
+
+.menu-content ul li a {
+    color: white; /* Warna tautan */
+    text-decoration: none; /* Hilangkan garis bawah pada tautan */
+    font-size: 1.5rem; /* Ukuran font */
+    transition: color 0.3s; /* Transisi halus untuk warna */
+}
+
+.menu-content ul li a:hover {
+    color: #ffcc00; 
+}
+
+.close {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    font-size: 2rem; 
+    color: white; 
+    cursor: pointer; 
+}
+
+.Buying{
+    width: 100%;
+    height: 250px; 
+    background-color: black; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.Buying h2{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: white;
+}
+
+label{
+    color: white;
+}
+
+.Buying form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px; /* Menambahkan jarak antar elemen */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+}
+
+form{
+    margin-left: 300px;
+}
+
+.tanggal, .lokasi, .jumlah{
+    font-size: 200%;
+}
+
+
+
+input, select{
+    padding: 10px 20px;
+    background-color: #D9D9D9;
+    color: rgb(56, 54, 54);
+    border: none;   
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}

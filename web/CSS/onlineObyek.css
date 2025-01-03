@@ -1,0 +1,83 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Dec 15, 2024, 1:29:54 PM
+    Author     : ASUS
+*/
+
+body {
+    font-family: 'Jacques Francois', serif; 
+    background-image: url('Gambar/BackgroundTicket.png');
+    margin: 0px;
+}
+
+.background {
+    width: 100%; 
+    filter: brightness(50%);
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+}
+
+
+.Logo{
+    position: absolute;
+    top: 50%; 
+    left: 3%; 
+    transform: translate(-50%, -50%); /* Memindahkan setengah dari lebar dan tinggi elemen */
+    width: 4%; 
+    border-radius: 50%;
+}
+
+button{
+    margin-right: 50px;
+}
+    
+footer{
+    background-color: #494848;
+    margin-top: 70px;
+    margin-bottom: 5px;
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.footerUp {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    color: white; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+.footerDown {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footerDown p {
+    margin: 0; 
+    padding: 5px 0; 
+}
+
